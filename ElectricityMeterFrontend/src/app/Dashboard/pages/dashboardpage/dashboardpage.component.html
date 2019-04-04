@@ -1,0 +1,18 @@
+<div class="w-100 h-100" *ngIf="authService.isLoggedIn()" [@ngIfInAnimation]>
+  <div class="d-flex flex-column w-100">
+    <app-topbar></app-topbar>
+    <app-paginationbar></app-paginationbar>
+  </div>
+  <div class="row h-100 bg-light">
+   <div class="col-lg-2 col-md-2 m-0 p-0">
+     <app-sidebar></app-sidebar>
+   </div>
+    <div class="d-flex flex-column col-10 p-0">
+      <div class="h-100 w-100" style="overflow-y: auto; overflow-x: hidden">
+        <ng4-loading-spinner> </ng4-loading-spinner>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  </div>
+

@@ -1,0 +1,4 @@
+<div class="h-100 bg-light" *ngIf=!authService.isLoggedIn() [@ngIfOutAnimation]>
+  <app-login *ngIf="isLogin" (onLogin)="OnLogin($event)" (onCreateAccount)="OnCreateAccount($event)" [@ngIfInAnimation]></app-login>
+  <app-createaccount *ngIf="isCreateAccount" (onCreateAccount)="OnCreateAccount($event)" [@ngIfInAnimation]></app-createaccount>
+</div>

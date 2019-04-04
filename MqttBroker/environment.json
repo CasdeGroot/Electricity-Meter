@@ -1,0 +1,4 @@
+{
+  "dbUrl": "mongodb://meterserver:banaan@165.227.180.251:27017",
+  "db": "electrischeMeter"
+}

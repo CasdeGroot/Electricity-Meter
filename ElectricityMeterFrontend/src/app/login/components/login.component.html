@@ -1,0 +1,14 @@
+<div class="d-flex flex-row bg-light h-100 align-items-center justify-content-center">
+  <div class="card p-5" style="width: 40% !important; height: 60% !important; background-color:#F7F7F7">
+    <img class="card-img-top w-50 h-50 align-self-center" src="../../../assets/logo3.png">
+    <div class="card-body">
+      <form  class="d-flex flex-column align-items-center p-2 justify-content-center form-group" [formGroup]="loginForm">
+        <input class="p-2 m-2 w-50 form-control" formControlName="username" [(ngModel)]="user.username" type="text" placeholder="Username">
+        <input class="p-2 m-2 w-50 form-control" formControlName="password" [(ngModel)]="user.password" type="password" placeholder="Password">
+        <button class="btn btn-primary p-2 m-2 w-50" (click)="onLoginClick()"  [disabled]="!loginForm.valid"> Login </button>
+        <a href="javascript:void(0)" class="float-right " (click)="onCreateAccountClick()"> create account</a>
+      </form>
+    </div>
+  </div>
+</div>
+

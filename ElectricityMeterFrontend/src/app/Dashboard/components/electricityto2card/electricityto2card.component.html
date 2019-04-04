@@ -1,0 +1,6 @@
+<app-linechartcard [title]="'Electricity Usage Tariff 2'" (dateSelected)="OnDateSelected($event)">
+  <app-linechart [chart]="chart" *ngIf="dataSource.length"></app-linechart>
+  <div class="jumbotron h-100 d-flex flex-row justify-content-center rounded" *ngIf="!dataSource.length">
+    <h1> No Measurements found </h1>
+  </div>
+</app-linechartcard>

@@ -1,0 +1,14 @@
+<div class="m-2" style="width: 100%; height: 100%">
+  <ngx-charts-bar-vertical
+    [results]="chart.data"
+    [gradient]="chart.gradient"
+    [xAxis]="chart.showXAxis"
+    [yAxis]="chart.showYAxis"
+    [legend]="chart.showLegend"
+    [showXAxisLabel]="chart.showXAxisLabel"
+    [showYAxisLabel]="chart.showYAxisLabel"
+    [xAxisLabel]="chart.xAxisLabel"
+    [yAxisLabel]="chart.yAxisLabel">
+  </ngx-charts-bar-vertical>
+  <button class="btn btn-primary rounded m-2" (click)="this.chart.update()"> Refresh </button>
+</div>

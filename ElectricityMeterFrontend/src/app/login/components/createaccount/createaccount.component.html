@@ -1,0 +1,26 @@
+<div class="d-flex flex-row bg-light h-100 align-items-center justify-content-center">
+  <div class="card p-5" style="width: 40% !important; height: 60% !important; background-color:#F7F7F7">
+    <img class="card-img-top w-25 h-25 align-self-center" src="../../../assets/logo3.png">
+    <form  class="d-flex flex-column align-items-center p-2 justify-content-center form-group" [formGroup]="userForm">
+      <div class="d-flex flex-row">
+        <input class="p-2 m-2 w-50 form-control" formControlName="username" [(ngModel)]="user.username" type="text" placeholder="Username">
+        <input class="p-2 m-2 w-50 form-control" formControlName="password" [(ngModel)]="user.password" type="password" placeholder="Password">
+      </div>
+      <div class="d-flex flex-row">
+        <input class="p-2 m-2 w-50 form-control" formControlName="name" [(ngModel)]="user.name" type="text" placeholder="Full Name">
+        <input class="p-2 m-2 w-50 form-control" formControlName="email" [(ngModel)]="user.email" type="text" placeholder="email">
+      </div>
+      <div class="d-flex flex-row">
+        <input class="p-2 m-2 w-50 form-control" formControlName="cellPhone" [(ngModel)]="user.cellPhone" type="text" placeholder="Cell Phone Number">
+        <input class="p-2 m-2 w-50 form-control" formControlName="homePhone" [(ngModel)]="user.homePhone" type="text" placeholder="Home Phone Number">
+      </div>
+      <div class="d-flex flex-row">
+        <input class="p-2 m-2 w-50 form-control" formControlName="address" [(ngModel)]="user.address" type="text" placeholder="Address">
+        <input class="p-2 m-2 w-50 form-control" formControlName="areaCode" [(ngModel)]="user.areaCode" type="text" placeholder="Area Code">
+      </div>
+        <button class="btn btn-primary p-2 m-2" (click)="onCreateAccountClick()"  [disabled]="!userForm.valid"> Create Account </button>
+      <a href="javascript:void(0)" class="float-right " (click)="GoBack()"> Go Back</a>
+    </form>
+  </div>
+</div>
+

@@ -1,0 +1,6 @@
+<app-linechartcard [title]="'Payings'" (dateSelected)="OnDateSelected($event)">
+  <app-barchart [chart]="chart" *ngIf="dataSource.length"></app-barchart>
+  <div class="jumbotron h-100 d-flex flex-row justify-content-center rounded" *ngIf="!dataSource.length">
+    <h1> No Payings found </h1>
+  </div>
+</app-linechartcard>

@@ -1,0 +1,8 @@
+{
+  "db-connection-string": "mongodb://meterserver:banaan@165.227.180.251:27017",
+  "db-name": "electrischeMeter",
+  "secret": "mysecrettoken",
+  "mqttBroker":   "mqtt://165.227.180.251:1234/",
+  "mqtt-username": "user",
+  "mqtt-password": "user"
+}

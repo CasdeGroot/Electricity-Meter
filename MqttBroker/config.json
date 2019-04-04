@@ -1,0 +1,9 @@
+{
+  "port": 1234,
+  "backend": {
+    "type": "mongo",
+    "url": "mongodb://meterserver:banaan@165.227.180.251:27017/mqtt",
+    "pubsubCollection": "ascoltatori",
+    "mongo": {}
+  }
+}

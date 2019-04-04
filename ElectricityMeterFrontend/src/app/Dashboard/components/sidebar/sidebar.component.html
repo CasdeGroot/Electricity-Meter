@@ -1,0 +1,22 @@
+<div class="d-flex flex-column bg-dark h-100 w-100">
+  <div style="height: 85%">
+    <div class="d-flex flex-column justify-content-center align-items-center text-white h-25 w-100">
+      <img src="../../../../assets/pf.png" class="rounded-circle w-75 h-75 flex-item">
+      <h4> Cas de Groot </h4>
+    </div>
+      <div class="flex-column mt-4">
+        <button class="list-group-item d-flex flex-row w-75 mr-auto align-items-center ml-auto mb-2 rounded bg-primary text-white" (click)="router.navigate(['home'])">
+          <i class="fa fa-home w-25"></i> Home
+        </button>
+        <button class="list-group-item d-flex flex-row w-75 mr-auto align-items-center ml-auto mb-2 rounded bg-primary text-white" (click)="router.navigate(['user'])">
+          <i class="fa fa-user w-25" ></i> Account
+        </button>
+        <button class="list-group-item d-flex flex-row w-75 mr-auto align-items-center ml-auto mb-2 rounded bg-primary text-white" (click)="router.navigate(['dashboard'])">
+          <i class="fa fa-line-chart w-25"></i> Measurements
+        </button>
+        <button class="list-group-item d-flex flex-row w-75 mr-auto align-items-center ml-auto mb-2 rounded bg-primary text-white" (click)="router.navigate(['payings'])">
+          <i class="fa fa-money w-25"></i> Payings
+        </button>
+      </div>
+  </div>
+</div>
